@@ -1,0 +1,819 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* ## Colors */
+
+    --Neutral-0: hsl(0, 0%, 100%);
+    --Neutral-300: hsl(252, 6%, 83%);
+    --Neutral-500: hsl(245, 15%, 58%);
+    --Neutral-700: hsl(245, 19%, 35%);
+    --Neutral-900: hsl(248, 70%, 10%);
+
+    --Orange-500: hsl(7, 88%, 67%);
+    --Orange-700: hsl(7, 71%, 60%);
+
+    --Gradient-text: hsl(7, 86%, 67%) to hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: "inconsolata", sans-serif;
+    color: var(--Neutral-0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+}
+
+main {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-block: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+    max-height: auto;
+}
+
+.mainOverlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.mainOverlayMob {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.mainOverlayTab {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.mainOverlay img {
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.linesOverlay {
+    position: absolute;
+    top: -80px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.linesOverlay img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.overlayCircle {
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    width: 20%;
+    height: 20%;
+}
+
+.overlayCircle img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.overlayZig {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 200px;
+    width: 300px;
+}
+
+.overlayZig img {
+    height: 100%;
+    width: 100%;
+}
+
+.overlayZag {
+    position: absolute;
+    bottom: -100px;
+    left: 0px;
+    height: 500px;
+    width: 500px;
+}
+
+.overlayZag img {
+    height: 100%;
+
+    width: 100%;
+
+
+}
+
+.formSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.mainHead {
+    color: var(--Neutral-0);
+    font-weight: 600;
+    width: 45%;
+    text-align: center;
+    font-size: 2.7rem;
+}
+
+.tagLine {
+    font-size: 1.1rem;
+    color: var(--Neutral-300);
+    font-weight: 500;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 30%;
+    align-items: center;
+}
+
+.covers {
+    display: flex;
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    /* text-align: start; */
+    width: 90%;
+}
+
+.inputs {
+    background-color: hsla(246, 15%, 58%, 0.301);
+    ;
+    height: 40px;
+    color: var(--Neutral-300);
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    outline: none;
+    font-family: "inconsolata", sans-serif;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+.inputs::placeholder {
+    color: rgba(255, 255, 255, 0.793);
+    font-weight: 300;
+    /* font-size: 1.4rem; */
+    font-size: 15px;
+}
+
+.formButton {
+    width: 100%;
+    font-family: "inconsolata", sans-serif;
+    height: 45px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    /* color: ; */
+    background-color: var(--Orange-500);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* .formButton:hover{
+    border: 1px double white;
+} */
+.fileCover {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.fileCover span {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    text-align: start;
+
+    gap: 10px;
+    font-size: 10px;
+}
+
+.inputsCover1,
+.inputsCover2,
+.btnCover,
+.inputsCover3,
+.inputsCover4 {
+    width: 90%;
+    border-radius: 9px;
+}
+
+.inputsCover1:hover,
+.btnCover:hover,
+.inputsCover2:hover,
+.inputsCover3:hover,
+.inputsCover4:hover {
+    padding: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.598);
+}
+
+/* =====================
+inputFile
+======================= */
+.file-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 100%;
+}
+
+.upload-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.194);
+    border-radius: 8px;
+}
+
+.file-upload .upload-icon {
+    font-size: 24px;
+    color: #ff6f61;
+}
+
+.priviewImageCover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    display: none;
+}
+
+#preview-image {
+    display: none;
+    max-width: 100%;
+    max-height: 40px;
+    border-radius: 8px;
+}
+
+.file-upload p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.file-upload small {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.cloudIcon {
+    /* display: block; */
+    height: 70%;
+    width: 70%;
+}
+
+.removeImage,
+.changeImage {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 12px;
+    color: var(--Neutral-300);
+    padding-block: 6px;
+    text-transform: capitalize;
+    font-family: "inconsolata", sans-serif;
+    border-radius: 5px;
+    padding-inline: 10px;
+    background-color: #ffffff13;
+
+}
+
+
+
+.firstError,
+.emailError,
+.gitNameError {
+    color: var(--Orange-700);
+    font-size: 10px;
+    width: 90%;
+
+}
+
+/* =========================
+generateTicket
+========================= */
+
+.generateTicket {
+    height: auto;
+    padding-block: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.ticket {
+    position: relative;
+    width: 40%;
+    height: 250px;
+}
+
+.ticketOverlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.ticketOverlay img {
+    /* height: 100%; */
+    width: 100%;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.ticketDetails {
+    /* padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px; */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticketLogo {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.textSide {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logoSide img {
+    height: 40px;
+    width: 40px;
+}
+
+.ticketLogo p {
+    width: 100%;
+    text-align: end;
+    word-spacing: 3px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff89;
+}
+
+.dynamicDetailsUser {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+
+    align-items: center;
+}
+
+.dTextSection {
+    padding-block: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dTextSection .Name {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+
+}
+
+.dynamicImage {
+    height: 70px;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 70px;
+
+}
+
+.dynamicImage img {
+    height: 100%;
+    width: 100%;
+}
+
+.emailspan {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.779);
+}
+
+.detailChildCover {
+    height: 100%;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+    width: 70%;
+}
+
+.ticketEmailedLine {
+    width: 40%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    color: rgba(255, 255, 255, 0.897);
+}
+
+.anyText {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.602);
+    font-size: 1.5rem;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    /* Rotates the text 90 degrees */
+}
+
+.tagLineEmail {
+    color: var(--Orange-700);
+}
+
+.forHeadName {
+    background: linear-gradient(45deg, var(--Orange-700), white);
+    -webkit-background-clip: text;
+    text-transform: capitalize;
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+}
+
+@media(max-width:540px) {
+    main {
+        padding-block: 40px;
+        justify-content: start;
+    }
+
+    .mainHead {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 90%;
+    }
+
+    .tagLine {
+        width: 90%;
+        text-align: center;
+        line-height: 1.5;
+
+    }
+
+    .ticketEmailedLine {
+        width: 90%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .mainOverlay {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    .mainOverlayMob {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .mainOverlayMob img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .mainOverlayTab {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    .linesOverlay img {
+        width: auto;
+        height: 50%;
+        display: flex;
+        z-index: 2;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .ticket {
+        width: 95%;
+    }
+
+    .cover {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textSide h1 {
+        font-size: 2rem;
+    }
+
+    .ticketLogo p {
+        font-size: 10px;
+    }
+
+    .generateTicket {
+        padding-block: 0px;
+    }
+
+    .overlayZag {
+        height: 300px;
+        width: 300px;
+    }
+
+    .dynamicDetailsUser {
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .dTextSection .Name {
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+
+    .dTextSection {
+        padding-block: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .dynamicImage {
+        height: 50PX;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 50PX;
+    }
+
+    .emailspan {
+        font-size: 1rem;
+    }
+
+    .ticketLogo {
+        gap: 8px;
+    }
+
+    .textSide h1 {
+        font-size: 1.65rem;
+    }
+
+    .detailChildCover {
+        gap: 15px;
+        padding: 0px;
+        width: 90%;
+    }
+
+    .anyText {
+        width: 5%;
+    }
+
+
+    .ticketDetails {
+        width: 100%;
+        padding-inline: 30px;
+    }
+
+}
+
+@media(max-width:290px) {
+    .detailChildCover {
+        gap: 12px;
+        padding: 5px;
+        width: 90%;
+    }
+
+    .ticketLogo {
+        gap: 8px;
+    }
+
+    .dynamicDetailsUser {
+        width: 100%;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .dTextSection .Name {
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+
+    .emailspan {
+        font-size: .8rem;
+    }
+
+    .anyText {
+        width: 15%;
+        font-size: 1rem;
+    }
+
+    .logoSide img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .textSide h1 {
+        font-size: 1rem;
+    }
+
+    .ticket {
+        height: 150px;
+    }
+
+    .ticketLogo p {
+        font-size: 10px;
+    }
+
+    .ticketDetails {
+        padding: 0px;
+    }
+
+    .overlayZag {
+        height: 200px;
+        width: 200px;
+        bottom: -50px;
+
+    }
+}
+
+@media(min-width:767px) and (max-width:1025px) {
+    .mainOverlay {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    .mainOverlayMob {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    .mainOverlayTab {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .mainOverlayTab img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .form {
+        width: 60%;
+    }
+
+    .mainHead {
+        width: 60%;
+    }
+
+    .ticketEmailedLine {
+        width: 70%;
+    }
+    .ticket{
+        width: 60%;
+    }
+
+}
+
+.attribution{
+    position: relative;
+    z-index: 10;
+}
+.none {
+    display: none;
+}
